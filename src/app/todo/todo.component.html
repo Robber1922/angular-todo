@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="todo-container" *ngFor="let todo of todos$ | async">
+        <div class="content">
+            <label for="checkbox" [ngClass]="['todo-label', todo.isCompleted ? 'completed-todo' : '']">{{todo.title}}</label>
+            <div class="actions-container">
+                <input id="checkbox" (click)="check(todo)" class="todo-checkbox" type="checkbox" #checkboxToDo [value]="todo" [checked]="todo.isCompleted"/>
+                <button (click)="delete(todo)" class="delete">Delete</button>                </div>
+        </div>
+    </div>   
+</div>

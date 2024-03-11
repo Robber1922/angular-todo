@@ -1,0 +1,55 @@
+.todo-container {
+    background-color: white;
+    box-shadow: 0px 8px 11px -8px rgba(34, 60, 80, 0.09);
+    width: 100%;
+    padding: 5px 15px;
+    border-bottom: 1px solid rgb(208, 207, 207);
+}
+
+.todo-label {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.completed-todo {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.todo-checkbox {
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+}
+
+.delete {
+    width: 62px;
+    background-color: rgba(217, 104, 104, 0.5);
+    border: white;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.delete-completed-container {
+    width: 500px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 10px;
+}
+

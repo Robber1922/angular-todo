@@ -1,0 +1,20 @@
+<form [formGroup]="inputForm">
+    <div class="container">
+    <input
+        id="todo-input"
+        class="todo-input"
+        formControlName="title"
+        type="text"
+        #todoTitle
+        placeholder="What needs to be done?"
+    />
+    <button
+        type="button"
+        [ngClass]="['add-button', inputForm.invalid ? 'disabled-button' : '']"
+        [disabled]="inputForm.invalid"
+        (click)="addTodo()"
+    >
+        Add
+    </button>
+    </div>
+</form>

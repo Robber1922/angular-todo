@@ -1,0 +1,21 @@
+.app-container {
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.title {
+    text-align: center;
+    color: rgba(217, 104, 104, 0.5);
+    font-size: 64px;
+    font-weight: 100;
+    margin: 0;
+}
